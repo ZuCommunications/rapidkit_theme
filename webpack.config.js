@@ -10,7 +10,7 @@ Encore
   // directory where compiled assets will be stored
   .setOutputPath("dist/")
   // public path used by the web server to access the output path
-  .setPublicPath("/themes/custom/zu_starterkit/dist")
+  .setPublicPath("/themes/contrib/zu_starterkit/dist")
   // only needed for CDN's or sub-directory deploy
   //.setManifestKeyPrefix('build/')
 
