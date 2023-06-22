@@ -1,0 +1,23 @@
+{% if type == 'error' %}
+  {% set alertClasses = 'text-red-800 bg-red-50 dark:text-red-400' %}
+{% elseif type == 'status' %}
+  {% set alertClasses = 'text-green-800 bg-green-50 dark:text-green-400' %}
+{% elseif type == 'warning' %}
+  {% set alertClasses = 'text-yellow-800 bg-yellow-50 dark:text-yellow-300' %}
+{% else %}
+  {% set alertClasses = 'text-gray-800 bg-gray-50 dark:text-gray-300' %}
+{% endif %}
+<div class="flex p-4 mb-4 text-sm rounded-lg dark:bg-gray-800 {{ alertClasses }}">
+  <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+  <div>
+    {% if messages|length > 1 %}
+      <ul class="mt-1.5 ml-4 list-disc list-inside">
+        {% for message in messages %}
+          <li class="">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <span class="font-medium">{{ messages|first }}</span>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,6 @@
+name: Accordion
+props:
+  type: object
+  properties:
+    classes:
+      type: array

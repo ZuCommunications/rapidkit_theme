@@ -1,0 +1,7 @@
+[drawer-backdrop] {
+    @apply lg:hidden;
+}
+
+[data-drawer] {
+    top: var(--drupal-displace-offset-top, 0);
+}

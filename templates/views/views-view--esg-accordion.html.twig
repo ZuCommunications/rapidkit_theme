@@ -1,0 +1,7 @@
+{% set id_accordion = 'accordion-' ~ random() %}
+<div id="{{ id_accordion }}" data-accordion="collapse">
+    {% for row in rows  %}
+        {{ row }}
+    {% endfor %}
+</div>
+

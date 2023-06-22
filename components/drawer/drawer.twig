@@ -1,0 +1,26 @@
+<div
+  data-drawer-target="{{ id }}"
+  data-drawer-show="{{ id }}"
+  aria-controls="{{ id }}"
+  data-drawer-placement="{{ placement }}"
+>
+  {% block trigger %}
+    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+      Menu
+    </button>
+  {% endblock %}
+</div>
+
+{% if placement == 'left' %}
+  {% set placementClass = 'left-0 -translate-x-full' %}
+{% elseif placement == 'right' %}
+  {% set placementClass = 'right-0 translate-x-full' %}
+{% endif %}
+
+<div data-drawer id="{{ id }}" class="{{ placementClass }} fixed top-0 z-40 h-screen overflow-y-auto transition-transform " tabindex="-1">
+  {% block content %}
+    <div class="p-4 bg-white w-80 dark:bg-gray-800 h-full">
+      Content
+    </div>
+  {% endblock %}
+</div>

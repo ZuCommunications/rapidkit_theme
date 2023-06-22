@@ -1,0 +1,11 @@
+name: Drawer
+props:
+  type: object
+  properties:
+    id:
+      type: array
+    placement:
+      type: string
+      enum:
+          - right
+          - left

@@ -1,0 +1,14 @@
+app:
+  header: true
+  css:
+    theme:
+      dist/app.css:
+        media: screen
+        minified: true
+  js:
+    dist/app.js:
+      minified: true
+      attributes:
+        defer: true
+  dependencies:
+    - core/jquery

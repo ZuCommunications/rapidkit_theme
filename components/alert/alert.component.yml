@@ -1,0 +1,12 @@
+name: Alert
+props:
+  type: object
+  properties:
+    messages:
+      type: array
+    type:
+      type: string
+      enum:
+        - status
+        - warning
+        - error

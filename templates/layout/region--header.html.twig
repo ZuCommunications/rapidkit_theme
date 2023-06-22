@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+    'bg-gray-200'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <div class="container mx-auto">
+    <div class="grid gap-4 grid-cols-2 lg:grid-cols-5">
+      <div class="col-span-2 lg:row-span-2 lg:col-span-1">LOGO:</div>
+      <div class="lg:row-span-1 lg:col-span-4 flex">
+        <div>STOCK:</div>
+        <div class="hidden lg:block">SEARCH:</div>
+      </div>
+      <div class="lg:row-span-1 lg:col-span-4">
+        <div class="hidden lg:block">DESKTOP NAV: {{ elements.corporate_main_navigation_by_domain }}</div>
+        <div class="lg:hidden flex justify-end">
+          {% embed 'duchess:drawer' with {
+            id: 'mobile-nav',
+            placement: 'right',
+          } %}
+          {% endembed %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
