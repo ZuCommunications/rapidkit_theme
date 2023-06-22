@@ -3,7 +3,7 @@ props:
   type: object
   properties:
     id:
-      type: array
+      type: string
     placement:
       type: string
       enum:
