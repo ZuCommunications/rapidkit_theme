@@ -1,0 +1,12 @@
+{
+  "name": "zucommunications/zu_starterkit",
+  "description": "zu starterkit theme.",
+  "type": "drupal-theme",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Kevin Warrington",
+      "role": ""
+    }
+  ]
+}
