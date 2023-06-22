@@ -1,5 +1,5 @@
 ```twig
-{% embed 'duchess:alert' with {
+{% embed 'zu_starterkit:alert' with {
     messages: messages,
     type: type,
 } %}

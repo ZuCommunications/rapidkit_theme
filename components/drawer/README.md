@@ -1,5 +1,5 @@
 ```twig
-{% embed 'duchess:drawer' with {
+{% embed 'zu_starterkit:drawer' with {
     id: 'mobile-nav',
     placement: 'right',
 } %}

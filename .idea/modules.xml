@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/drupal-theme.iml" filepath="$PROJECT_DIR$/.idea/drupal-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/zu_starterkit.iml" filepath="$PROJECT_DIR$/.idea/zu_starterkit.iml" />
     </modules>
   </component>
 </project>

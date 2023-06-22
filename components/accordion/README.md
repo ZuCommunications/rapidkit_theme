@@ -1,5 +1,5 @@
 ```twig
-{% embed 'duchess:accordion' with {
+{% embed 'zu_starterkit:accordion' with {
     items: [{
       title: 'Title 1',
       content: 'Content 1'

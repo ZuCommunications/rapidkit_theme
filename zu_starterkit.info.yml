@@ -1,9 +1,9 @@
-name: duchess
+name: zu_starterkit
 type: theme
 'base theme': stable9
 starterkit: true
 version: VERSION
 libraries:
-  - duchess/app
+  - zu_starterkit/app
 core_version_requirement: ^10
 generator: 'zu_starterkit:10.1.0-rc1'

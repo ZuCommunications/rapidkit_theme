@@ -16,7 +16,7 @@ module.exports = {
         // "turquoise-500": "#337f93",
       },
       fontFamily: {
-        // gothic: ['"Gothic A1"', "sans-serif"],
+        // custom: ['Custom', "sans-serif"],
       },
     },
   },
