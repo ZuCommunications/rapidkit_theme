@@ -63,7 +63,47 @@ npm install
 npm run build
 ```
 
+## Storybook
 
+### Setup
+
+The storybook integration for cl_server needs CORS enable to work properly.  Add this to the development.services.yml:
+
+```yml
+parameters:
+  twig.config:
+    debug: true
+    cache: false
+  cors.config:
+    enabled: true
+    allowedHeaders: ["*"]
+    allowedMethods: []
+    allowedOrigins: ["*"]
+    exposedHeaders: false
+    maxAge: false
+    supportsCredentials: true
+```
+
+Also, each story needs to defined the full path to the story.  When using lando it should look as follows:
+
+```json
+{
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/zu_starterkit/components/alert/alert.stories.json"
+  }
+}
+```
+
+Also, you need to add the "Use the CL Server endpoint" to anonymous users on `/admin/people/permissions`
+
+### Usage
+
+To start the storybook server, you can run the following command from the root of your project:
+
+```bash
+cd web/themes/contrib/zu_starterkit
+npm run storybook
+```
 
 ## Generate Starterkit
 

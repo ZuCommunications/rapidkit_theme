@@ -1,0 +1,17 @@
+{
+  "title": "Alert",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/zu_starterkit/components/alert/alert.stories.json"
+  },
+  "stories": [
+    {
+      "name": "status",
+      "args": {
+        "type": "status",
+        "messages": [
+          "This is a status message"
+        ]
+      }
+    }
+  ]
+}
