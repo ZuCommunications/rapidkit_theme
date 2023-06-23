@@ -22,6 +22,15 @@ The `dev-` prefix is a composer convention.  In the above example, the actual br
 
 After install, you will find the theme in `web/themes/contrib/zu_starterkit`.
 
+### Dependencies
+
+This theme requires the following dependencies:
+
+```bash
+composer require 'drupal/cl_server:^2.0@beta'
+drush en -y cl_server sdc
+```
+
 ### Enable
 
 To enable the theme, you can run the following commands from the root of your project:
@@ -37,7 +46,7 @@ drush cr
 To disable the theme, you can run the following commands from the root of your project:
 
 ```bash
-drush config-set system.theme default bartik -y
+drush config-set system.theme default olivero -y
 drush theme:uninstall zu_starterkit
 drush cr
 ``` 
