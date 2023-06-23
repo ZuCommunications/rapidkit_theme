@@ -8,7 +8,17 @@ const preview = {
         date: /Date$/,
       },
     },
+    server: {
+      // Replace this with your Drupal site URL, or an environment variable.
+      url: 'https://drupal',
+    },
   },
+  globals: {
+    drupalTheme: 'olivero',
+    supportedDrupalThemes: {
+      olivero: {title: 'Olivero'}
+    },
+  }
 };
 
 export default preview;
