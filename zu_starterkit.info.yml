@@ -7,3 +7,5 @@ libraries:
   - zu_starterkit/app
 core_version_requirement: ^10
 generator: 'zu_starterkit:10.1.0-rc1'
+dependencies:
+  - drupal/sdc
