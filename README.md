@@ -22,14 +22,25 @@ The `dev-` prefix is a composer convention.  In the above example, the actual br
 
 After install, you will find the theme in `web/themes/contrib/zu_starterkit`.
 
-To enable this theme, you can run the following commands from the root of your project:
+### Enable
+
+To enable the theme, you can run the following commands from the root of your project:
 
 ```bash
 drush theme:install zu_starterkit
 drush config-set system.theme default zu_starterkit -y
-drush en -y sdc
 drush cr
 ```
+
+### Disable
+
+To disable the theme, you can run the following commands from the root of your project:
+
+```bash
+drush config-set system.theme default bartik -y
+drush theme:uninstall zu_starterkit
+drush cr
+``` 
 
 ## Compilation
 
