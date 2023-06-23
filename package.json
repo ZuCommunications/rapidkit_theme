@@ -7,7 +7,9 @@
     "dev-server": "encore dev-server",
     "dev": "encore dev",
     "watch": "encore dev --watch",
-    "build": "encore production"
+    "build": "encore production",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,11 @@
   },
   "devDependencies": {
     "@hotwired/stimulus": "^3.2.1",
+    "@storybook/addon-essentials": "^7.0.23",
+    "@storybook/addon-links": "^7.0.23",
+    "@storybook/blocks": "^7.0.23",
+    "@storybook/server": "^7.0.23",
+    "@storybook/server-webpack5": "^7.0.23",
     "@symfony/webpack-encore": "^4.3.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/container-queries": "^0.1.1",
@@ -27,6 +34,9 @@
     "postcss": "^8.4.24",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.23",
     "tailwindcss": "^3.3.2",
     "ts-loader": "^9.4.3"
   },
