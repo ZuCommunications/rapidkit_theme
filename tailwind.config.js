@@ -6,6 +6,7 @@ module.exports = {
     "./components/**/*.twig",
     "./node_modules/flowbite/**/*.js",
   ],
+  darkMode: ["class", '[data-mode="dark"]'],
   theme: {
     extend: {
       container: {

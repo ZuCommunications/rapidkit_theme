@@ -65,11 +65,13 @@ npm run build
 
 ## Storybook
 
-We are using the `@lullabot/storybook-drupal-addon` for storybook.  It makes use of the `fetchStoryHtml` function provided by https://github.com/storybookjs/storybook/tree/next/code/frameworks/server-webpack5 to make a request to a running drupal installation.  The cl_server drupal module will create a route that will return markup for a given SDC. See https://github.com/Lullabot/storybook-drupal-addon/blob/main/src/fetchStoryHtml.ts for examples on usage.
+We are using the `@lullabot/storybook-drupal-addon` for storybook.  It makes use of the `fetchStoryHtml` function provided by https://github.com/storybookjs/storybook/tree/next/code/frameworks/server-webpack5 to make a request to a running Drupal installation.  The cl_server drupal module will create a route that will return markup for a given component. See https://github.com/Lullabot/storybook-drupal-addon/blob/main/src/fetchStoryHtml.ts for examples on usage.
 
 ### Setup
 
-The storybook integration for cl_server needs CORS enable to work properly.  Add this to the development.services.yml:
+You need to tell storybook where to look for your backend server.  Copy the example.env file to .env and update the `STORYBOOK_DRUPAL_URL` variable to point to your local Drupal installation.
+
+Also, the storybook integration for cl_server needs CORS enable to work properly.  Add this to the development.services.yml:
 
 ```yml
 parameters:
