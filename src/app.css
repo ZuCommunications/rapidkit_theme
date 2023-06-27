@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[data-mode="dark"] .sb-main-padded {
+    background-color: #2d2d2d;
+}

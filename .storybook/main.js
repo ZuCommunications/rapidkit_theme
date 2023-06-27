@@ -1,9 +1,10 @@
 /** @type { import('@storybook/server-webpack5').StorybookConfig } */
 const config = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(json)"],
+  stories: ["../components/**/*.stories.@(json|js)"],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "@storybook/addon-styling",
     "@lullabot/storybook-drupal-addon"
   ],
   framework: {
