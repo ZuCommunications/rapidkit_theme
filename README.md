@@ -59,6 +59,7 @@ To compile assets, you can run the following command from the root of your proje
 
 ```bash
 cd web/themes/contrib/zu_starterkit
+nvm use
 npm install
 npm run build
 ```
