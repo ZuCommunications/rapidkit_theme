@@ -7,5 +7,5 @@ props:
     placement:
       type: string
       enum:
-          - right
-          - left
+        - right
+        - left

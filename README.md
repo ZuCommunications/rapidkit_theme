@@ -4,21 +4,21 @@ To include this theme, you need to add the following to your composer.json file:
 
 ```json
 {
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:ZuCommunications/zu_starterkit.git"
-        }
-    ],
-    "require": {
-        "zucommunications/zu_starterkit": "dev-main"
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:ZuCommunications/zu_starterkit.git"
     }
+  ],
+  "require": {
+    "zucommunications/zu_starterkit": "dev-main"
+  }
 }
 ```
 
 To pull in changes from this repository, you will need to run `composer update` from the command line.
 
-The `dev-` prefix is a composer convention.  In the above example, the actual branch name will be `main` on GitHub. See https://getcomposer.org/doc/05-repositories.md#loading-a-package-from-a-vcs-repository for more information.
+The `dev-` prefix is a composer convention. In the above example, the actual branch name will be `main` on GitHub. See https://getcomposer.org/doc/05-repositories.md#loading-a-package-from-a-vcs-repository for more information.
 
 After install, you will find the theme in `web/themes/contrib/zu_starterkit`.
 
@@ -49,7 +49,7 @@ To disable the theme, you can run the following commands from the root of your p
 drush config-set system.theme default olivero -y
 drush theme:uninstall zu_starterkit
 drush cr
-``` 
+```
 
 ## Compilation
 
@@ -66,13 +66,13 @@ npm run build
 
 ## Storybook
 
-We are using the `@lullabot/storybook-drupal-addon` for storybook.  It makes use of the `fetchStoryHtml` function provided by https://github.com/storybookjs/storybook/tree/next/code/frameworks/server-webpack5 to make a request to a running Drupal installation.  The cl_server drupal module will create a route that will return markup for a given component. See https://github.com/Lullabot/storybook-drupal-addon/blob/main/src/fetchStoryHtml.ts for examples on usage.
+We are using the `@lullabot/storybook-drupal-addon` for storybook. It makes use of the `fetchStoryHtml` function provided by https://github.com/storybookjs/storybook/tree/next/code/frameworks/server-webpack5 to make a request to a running Drupal installation. The cl_server drupal module will create a route that will return markup for a given component. See https://github.com/Lullabot/storybook-drupal-addon/blob/main/src/fetchStoryHtml.ts for examples on usage.
 
 ### Setup
 
-You need to tell storybook where to look for your backend server.  Copy the example.env file to .env and update the `STORYBOOK_DRUPAL_URL` variable to point to your local Drupal installation.
+You need to tell storybook where to look for your backend server. Copy the example.env file to .env and update the `STORYBOOK_DRUPAL_URL` variable to point to your local Drupal installation.
 
-Also, the storybook integration for cl_server needs CORS enable to work properly.  Add this to the development.services.yml:
+Also, the storybook integration for cl_server needs CORS enable to work properly. Add this to the development.services.yml:
 
 ```yml
 parameters:
@@ -89,7 +89,7 @@ parameters:
     supportsCredentials: true
 ```
 
-Also, each story needs to defined the full path to the story.  When using lando it should look as follows:
+Also, each story needs to defined the full path to the story. When using lando it should look as follows:
 
 ```json
 {

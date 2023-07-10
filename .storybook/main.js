@@ -5,7 +5,7 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-styling",
-    "@lullabot/storybook-drupal-addon"
+    "@lullabot/storybook-drupal-addon",
   ],
   framework: {
     name: "@storybook/server-webpack5",

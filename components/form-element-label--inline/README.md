@@ -1,4 +1,4 @@
-# Form element label  checkbox
+# Form element label checkbox
 
 This is some default content for the README. Change this to the appropriate
 content.

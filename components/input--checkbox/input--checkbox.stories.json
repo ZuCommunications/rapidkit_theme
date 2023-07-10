@@ -6,8 +6,7 @@
   "stories": [
     {
       "name": "default",
-      "args": {
-      }
+      "args": {}
     }
   ]
 }

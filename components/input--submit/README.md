@@ -1,4 +1,4 @@
-# Input  radio
+# Input radio
 
 This is some default content for the README. Change this to the appropriate
 content.

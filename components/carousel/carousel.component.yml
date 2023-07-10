@@ -13,10 +13,10 @@ status: experimental
 # Use this key to organize components together.
 group: Navigation
 
-# Override components provided by other themes or modules. The format 
-# is <module-or-theme-machineName>:<component-machineName>. Note that only themes 
+# Override components provided by other themes or modules. The format
+# is <module-or-theme-machineName>:<component-machineName>. Note that only themes
 # can override components. This will not work in modules.
-replaces: 'sdc_module_test:my-component'
+replaces: "sdc_module_test:my-component"
 
 # Schema for the props. We support www.json-schema.org. Learn more about the
 # syntax there.

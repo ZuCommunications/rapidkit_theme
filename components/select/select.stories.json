@@ -7,12 +7,14 @@
     {
       "name": "default",
       "args": {
-        "options": [{
-          "type": "option",
-          "value": "1",
-          "selected": true,
-          "label": "Option 1"
-        }]
+        "options": [
+          {
+            "type": "option",
+            "value": "1",
+            "selected": true,
+            "label": "Option 1"
+          }
+        ]
       }
     }
   ]

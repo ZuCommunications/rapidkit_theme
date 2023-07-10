@@ -8,9 +8,7 @@
       "name": "status",
       "args": {
         "type": "status",
-        "messages": [
-          "This is a status message"
-        ]
+        "messages": ["This is a status message"]
       }
     }
   ]
