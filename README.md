@@ -112,11 +112,19 @@ npm run storybook
 
 ## Linting
 
-This theme uses [ESLint](https://eslint.org/) to lint JavaScript.  We are only checking code quality rules.  Please see https://prettier.io/docs/en/comparison.html for more information.  You will need to [configure your editor](https://eslint.org/docs/latest/use/integrations) to run on save.
+This theme uses [ESLint](https://eslint.org/) to lint JavaScript. We are only checking code quality rules. Please see https://prettier.io/docs/en/comparison.html for more information. You will need to [configure your editor](https://eslint.org/docs/latest/use/integrations) to run on save.
+
+```bash
+npm run lint
+```
 
 ## Formatting
 
-This theme uses [Prettier](https://prettier.io/) to format files.  You will need to [configure your editor](https://prettier.io/docs/en/editors.html) to run on save.
+This theme uses [Prettier](https://prettier.io/) to format files. You will need to [configure your editor](https://prettier.io/docs/en/editors.html) to run on save.
+
+```bash
+npm run format
+```
 
 ## Generate Starterkit
 
