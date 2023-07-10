@@ -110,6 +110,14 @@ cd web/themes/contrib/zu_starterkit
 npm run storybook
 ```
 
+## Linting
+
+This theme uses [ESLint](https://eslint.org/) to lint JavaScript.  We are only checking code quality rules.  Please see https://prettier.io/docs/en/comparison.html for more information.  You will need to [configure your editor](https://eslint.org/docs/latest/use/integrations) to run on save.
+
+## Formatting
+
+This theme uses [Prettier](https://prettier.io/) to format files.  You will need to [configure your editor](https://prettier.io/docs/en/editors.html) to run on save.
+
 ## Generate Starterkit
 
 To generate a new custom theme using this theme as a starterkit, you can run the following command from the root of your project:
