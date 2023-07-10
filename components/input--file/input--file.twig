@@ -1,0 +1,30 @@
+{% extends 'zu_starterkit:input' %}
+
+{% if attributes.type is empty %}
+  {% set attributes = attributes.setAttribute('type', 'file') %}
+{% endif %}
+
+{% set attributes = attributes.addClass([
+  'block',
+  'w-full',
+  'text-sm',
+  'text-gray-900',
+  'border',
+  'border-gray-300',
+  'rounded-lg',
+  'cursor-pointer',
+  'bg-gray-50',
+  '!outline-none',
+  'dark:text-gray-400',
+  'focus:shadow-[0_0_0_1px_transparent]',
+  'focus:shadow-blue-500',
+  'focus:ring-blue-500',
+  'focus:border-blue-500',
+  'dark:bg-gray-700',
+  'dark:border-gray-600',
+  'dark:placeholder-gray-400',
+  'dark:focus:ring-blue-500',
+  'dark:focus:border-blue-500'
+]) %}
+
+

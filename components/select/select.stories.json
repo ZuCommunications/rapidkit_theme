@@ -1,0 +1,19 @@
+{
+  "title": "Form/Select",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/zu_starterkit/components/select/select.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {
+        "options": [{
+          "type": "option",
+          "value": "1",
+          "selected": true,
+          "label": "Option 1"
+        }]
+      }
+    }
+  ]
+}

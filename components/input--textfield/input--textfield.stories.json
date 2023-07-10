@@ -1,0 +1,13 @@
+{
+  "title": "Form/Input Textfield",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/zu_starterkit/components/input--textfield/input--textfield.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {
+      }
+    }
+  ]
+}

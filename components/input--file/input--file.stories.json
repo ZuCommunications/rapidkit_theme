@@ -1,0 +1,13 @@
+{
+  "title": "Form/Input File",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/zu_starterkit/components/input--file/input--file.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {
+      }
+    }
+  ]
+}

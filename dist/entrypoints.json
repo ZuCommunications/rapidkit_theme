@@ -1,0 +1,12 @@
+{
+  "entrypoints": {
+    "app": {
+      "css": [
+        "/themes/contrib/zu_starterkit/dist/app.css"
+      ],
+      "js": [
+        "/themes/contrib/zu_starterkit/dist/app.js"
+      ]
+    }
+  }
+}

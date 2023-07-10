@@ -1,0 +1,14 @@
+{
+  "title": "Form/Textarea",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/zu_starterkit/components/textarea/textarea.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {
+
+      }
+    }
+  ]
+}

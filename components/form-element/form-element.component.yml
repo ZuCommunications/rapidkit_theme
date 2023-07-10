@@ -1,0 +1,14 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: "Form Element"
+status: "stable"
+props:
+  type: object
+slots:
+  children_html:
+    title: Children
+    examples:
+      - <p>Foo is <strong>NOT</strong> bar.</p>
+  label_html:
+    title: Label
+    examples:
+      - <p>Foo is <strong>NOT</strong> bar.</p>
