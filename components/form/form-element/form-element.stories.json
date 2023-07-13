@@ -1,7 +1,7 @@
 {
   "title": "Form/Form Element",
   "parameters": {
-    "fileName": "/app/web/themes/contrib/zu_starterkit/components/form-element/form-element.stories.json"
+    "fileName": "/app/web/themes/contrib/zu_starterkit/components/form/form-element/form-element.stories.json"
   },
   "stories": [
     {
