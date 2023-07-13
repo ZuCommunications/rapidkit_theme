@@ -3,7 +3,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./templates/**/*.twig",
-    "./components/**/*.twig",
+    "./components/**/*.{twig,js}",
     "./node_modules/flowbite/**/*.js",
   ],
   darkMode: ["class", '[data-mode="dark"]'],

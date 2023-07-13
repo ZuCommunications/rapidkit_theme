@@ -1,0 +1,15 @@
+{
+  "title": "Carousel",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/zu_starterkit/components/carousel/carousel.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {
+        "slideCount": 5,
+        "slides": "<div class=\"hidden duration-700 ease-in-out\" data-carousel-target=\"item\">\n                <img src=\"https://picsum.photos/800/800\" class=\"absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2\" alt=\"...\">\n            </div>\n            <div class=\"hidden duration-700 ease-in-out\" data-carousel-target=\"item\">\n                <img src=\"https://picsum.photos/800/800\" class=\"absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2\" alt=\"...\">\n            </div>\n            <div class=\"hidden duration-700 ease-in-out\" data-carousel-target=\"item\">\n                <img src=\"https://picsum.photos/800/800\" class=\"absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2\" alt=\"...\">\n            </div>\n            <div class=\"hidden duration-700 ease-in-out\" data-carousel-target=\"item\">\n                <img src=\"https://picsum.photos/800/800\" class=\"absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2\" alt=\"...\">\n            </div>\n            <div class=\"hidden duration-700 ease-in-out\" data-carousel-target=\"item\">\n                <img src=\"https://picsum.photos/800/800\" class=\"absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2\" alt=\"...\">\n            </div>"
+      }
+    }
+  ]
+}

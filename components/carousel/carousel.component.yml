@@ -1,82 +1,13 @@
-# Everything in this file is optional. Still, the file needs to exist. Adding
-# metadata here will improve the DX when using components.
-
-# This is so your IDE knows about the syntax for fixes and autocomplete.
-$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
-
-# The human readable name.
-name: Carousel
-
-# Status can be: "experimental", "stable", "deprecated", "obsolete".
-status: experimental
-
-# Use this key to organize components together.
-group: Navigation
-
-# Override components provided by other themes or modules. The format
-# is <module-or-theme-machineName>:<component-machineName>. Note that only themes
-# can override components. This will not work in modules.
-replaces: "sdc_module_test:my-component"
-
-# Schema for the props. We support www.json-schema.org. Learn more about the
-# syntax there.
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: "Carousel"
+status: "experimental"
 props:
-  # Props are always an object with keys. Each key is a variable in your
-  # component template.
   type: object
-
-  # If your component has required properties, you list them here.
-  required:
-    - primary
-
   properties:
-    # The key is the name of the variable in the template.
-    primary:
-      # You can add a human-readable name to your props.
-      title: Primary
-
-      # This variable is an array of strings: ['foo', 'bar', 'baz'].
-      # This information is required for every prop.
-      type: array
-      items:
-        type: string
-    secondary:
-      type: array
-      title: Secondary
-      items:
-        type: string
-
-# Slots always hold arbitrary markup. We know that beforehand, so no need for
-# a schema for slots.
+    slideCount:
+      type: integer
 slots:
-  # The key is the name of the slot. In your template you will use
-  # {% block body %}.
-  body:
-    # A human-readable name.
-    title: Body
-    # Mark it required if necessary.
-    required: true
-    # A description.
-    description: This is the body
-
-  # Only the key is required when declaring slots. This is how you declare a
-  # slot with minimal typing.
-  minimal: {}
-
-# This is how you take control of the keys in your library
-# declaration. The overrides specified here will be merged (shallow merge) with
-# the auto-generated library. The result of the merge will become the library
-# for the component.
-libraryOverrides:
-  # Once you add a key in the overrides, you take control of it. What you type
-  # here is what will end up in the library component.
-  dependencies:
-    - core/drupal
-    - core/once
-
-  # Here we are taking control of the JS assets. So we need to specify
-  # everything, even the parts that were auto-generated. This is useful when
-  # adding additional files or tweaking the <script> tag's attributes.
-  js:
-    my-component.js: { attributes: { defer: true } }
-    my-other-file.js: {}
+  slides:
+    title: Slides
+    examples:
+      - <p>Foo is <strong>NOT</strong> bar.</p>
