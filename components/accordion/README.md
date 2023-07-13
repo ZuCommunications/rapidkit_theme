@@ -1,5 +1,5 @@
 ```twig
-{% embed 'zu_starterkit:accordion' with {
+{% embed 'rapidkit_theme:accordion' with {
     items: [{
       title: 'Title 1',
       content: 'Content 1'

@@ -7,11 +7,11 @@ To include this theme, you need to add the following to your composer.json file:
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:ZuCommunications/zu_starterkit.git"
+      "url": "git@github.com:ZuCommunications/rapidkit_theme.git"
     }
   ],
   "require": {
-    "zucommunications/zu_starterkit": "dev-main"
+    "zucommunications/rapidkit_theme": "dev-main"
   }
 }
 ```
@@ -20,7 +20,7 @@ To pull in changes from this repository, you will need to run `composer update` 
 
 The `dev-` prefix is a composer convention. In the above example, the actual branch name will be `main` on GitHub. See https://getcomposer.org/doc/05-repositories.md#loading-a-package-from-a-vcs-repository for more information.
 
-After install, you will find the theme in `web/themes/contrib/zu_starterkit`.
+After install, you will find the theme in `web/themes/contrib/rapidkit_theme`.
 
 ### Dependencies
 
@@ -36,8 +36,8 @@ drush en -y cl_server sdc
 To enable the theme, you can run the following commands from the root of your project:
 
 ```bash
-drush theme:install zu_starterkit
-drush config-set system.theme default zu_starterkit -y
+drush theme:install rapidkit_theme
+drush config-set system.theme default rapidkit_theme -y
 drush cr
 ```
 
@@ -47,7 +47,7 @@ To disable the theme, you can run the following commands from the root of your p
 
 ```bash
 drush config-set system.theme default olivero -y
-drush theme:uninstall zu_starterkit
+drush theme:uninstall rapidkit_theme
 drush cr
 ```
 
@@ -58,7 +58,7 @@ This theme uses [Webpack Encore](https://symfony.com/doc/current/frontend.html#w
 To compile assets, you can run the following command from the root of your project:
 
 ```bash
-cd web/themes/contrib/zu_starterkit
+cd web/themes/contrib/rapidkit_theme
 nvm use
 npm install
 npm run build
@@ -94,7 +94,7 @@ Also, each story needs to defined the full path to the story. When using lando i
 ```json
 {
   "parameters": {
-    "fileName": "/app/web/themes/contrib/zu_starterkit/components/alert/alert.stories.json"
+    "fileName": "/app/web/themes/contrib/rapidkit_theme/components/alert/alert.stories.json"
   }
 }
 ```
@@ -106,7 +106,7 @@ Also, you need to add the "Use the CL Server endpoint" to anonymous users on `/a
 To start the storybook server, you can run the following command from the root of your project:
 
 ```bash
-cd web/themes/contrib/zu_starterkit
+cd web/themes/contrib/rapidkit_theme
 npm run storybook
 ```
 
@@ -133,9 +133,9 @@ To generate a new custom theme using this theme as a starterkit, you can run the
 ```bash
 cd web
 mkdir -p themes/custom
-php core/scripts/drupal generate-theme duchess --starterkit "zu_starterkit" --path themes/custom
+php core/scripts/drupal generate-theme duchess --starterkit "rapidkit_theme" --path themes/custom
 cd themes/custom/duchess
-find . -type f ! -name "*.png" ! -name "*.svg" ! -name "*.gif" -exec sed -i '' -e 's/zu_starterkit/duchess/g' {} +
+find . -type f ! -name "*.png" ! -name "*.svg" ! -name "*.gif" -exec sed -i '' -e 's/rapidkit_theme/duchess/g' {} +
 lando drush theme:install duchess
 lando drush config-set system.theme default duchess -y
 lando drush en -y sdc

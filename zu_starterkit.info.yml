@@ -1,12 +1,12 @@
-name: zu_starterkit
+name: rapidkit_theme
 type: theme
 "base theme": stable9
 starterkit: true
 version: VERSION
 libraries:
-  - zu_starterkit/app
+  - rapidkit_theme/app
 core_version_requirement: ^10
-generator: "zu_starterkit:10.1.0-rc1"
+generator: "rapidkit_theme:10.1.0-rc1"
 dependencies:
   - drupal:sdc
   - drupal:cl_server

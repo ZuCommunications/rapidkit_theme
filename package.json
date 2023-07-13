@@ -1,7 +1,7 @@
 {
-  "name": "zu_starterkit",
+  "name": "rapidkit_theme",
   "version": "1.0.0",
-  "description": "zu_starterkit theme",
+  "description": "rapidkit_theme theme",
   "main": "index.js",
   "scripts": {
     "dev-server": "encore dev-server",

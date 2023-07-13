@@ -1,7 +1,7 @@
 {
   "title": "Alert",
   "parameters": {
-    "fileName": "/app/web/themes/contrib/zu_starterkit/components/alert/alert.stories.json"
+    "fileName": "/app/web/themes/contrib/rapidkit_theme/components/alert/alert.stories.json"
   },
   "stories": [
     {

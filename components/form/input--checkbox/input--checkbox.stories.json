@@ -1,7 +1,7 @@
 {
   "title": "Form/Input Checkbox",
   "parameters": {
-    "fileName": "/app/web/themes/contrib/zu_starterkit/components/form/input--checkbox/input--checkbox.stories.json"
+    "fileName": "/app/web/themes/contrib/rapidkit_theme/components/form/input--checkbox/input--checkbox.stories.json"
   },
   "stories": [
     {

@@ -1,7 +1,7 @@
 {
   "title": "Form/Form Element",
   "parameters": {
-    "fileName": "/app/web/themes/contrib/zu_starterkit/components/form/form-element/form-element.stories.json"
+    "fileName": "/app/web/themes/contrib/rapidkit_theme/components/form/form-element/form-element.stories.json"
   },
   "stories": [
     {
@@ -9,8 +9,8 @@
       "args": {
         "label_display": "before",
         "label_text": "Label",
-        "children_html": "{% include 'zu_starterkit:input--textfield' with { attributes: create_attribute().setAttribute('type', 'textfield').setAttribute('id', 'test') } %}",
-        "label_html": "  {% include 'zu_starterkit:form-element-label' with { title: label_text, attributes: create_attribute().setAttribute('for', 'test') } %}",
+        "children_html": "{% include 'rapidkit_theme:input--textfield' with { attributes: create_attribute().setAttribute('type', 'textfield').setAttribute('id', 'test') } %}",
+        "label_html": "  {% include 'rapidkit_theme:form-element-label' with { title: label_text, attributes: create_attribute().setAttribute('for', 'test') } %}",
         "description": {
           "content": "Description"
         },

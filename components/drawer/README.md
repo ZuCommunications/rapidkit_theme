@@ -1,5 +1,5 @@
 ```twig
-{% embed 'zu_starterkit:drawer' with {
+{% embed 'rapidkit_theme:drawer' with {
     id: 'mobile-nav',
     placement: 'right',
 } %}

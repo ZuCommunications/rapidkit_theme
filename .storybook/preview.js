@@ -36,9 +36,9 @@ const preview = {
     },
   },
   globals: {
-    drupalTheme: "zu_starterkit",
+    drupalTheme: "rapidkit_theme",
     supportedDrupalThemes: {
-      zu_starterkit: { title: "zu Starterkit" },
+      rapidkit_theme: { title: "zu Starterkit" },
     },
   },
 };

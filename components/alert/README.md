@@ -1,5 +1,5 @@
 ```twig
-{% embed 'zu_starterkit:alert' with {
+{% embed 'rapidkit_theme:alert' with {
     messages: messages,
     type: type,
 } %}

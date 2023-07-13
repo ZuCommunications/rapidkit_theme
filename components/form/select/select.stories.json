@@ -1,7 +1,7 @@
 {
   "title": "Form/Select",
   "parameters": {
-    "fileName": "/app/web/themes/contrib/zu_starterkit/components/form/select/select.stories.json"
+    "fileName": "/app/web/themes/contrib/rapidkit_theme/components/form/select/select.stories.json"
   },
   "stories": [
     {
