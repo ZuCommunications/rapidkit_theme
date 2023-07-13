@@ -14,7 +14,17 @@ module.exports = {
         center: true,
       },
       colors: {
-        // "turquoise-500": "#337f93",
+        // https://uicolors.app/create with #005a9c (endeavour)
+        "endeavour-50": "#f0f8ff",
+        "endeavour-100": "#dff0ff",
+        "endeavour-200": "#b9e1fe",
+        "endeavour-300": "#7bcbfe",
+        "endeavour-400": "#34b0fc",
+        "endeavour-500": "#0a97ed",
+        "endeavour-600": "#0077cb",
+        "endeavour-700": "#005a9c",
+        "endeavour-800": "#055187",
+        "endeavour-900": "#0a4370",
       },
       fontFamily: {
         // custom: ['Custom', "sans-serif"],
