@@ -3,3 +3,6 @@ name: "Select"
 status: "stable"
 props:
   type: object
+  properties:
+    classes:
+      type: array

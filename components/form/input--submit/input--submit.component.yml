@@ -3,3 +3,6 @@ name: "Input - Submit"
 status: "stable"
 props:
   type: object
+  properties:
+    classes:
+      type: array

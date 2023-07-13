@@ -3,3 +3,6 @@ name: "Input - Radio"
 status: "stable"
 props:
   type: object
+  properties:
+    classes:
+      type: array

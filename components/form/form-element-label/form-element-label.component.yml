@@ -3,3 +3,6 @@ name: "Form Element Label"
 status: "stable"
 props:
   type: object
+  properties:
+    classes:
+      type: array

@@ -1,3 +1,4 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
 name: Drawer
 props:
   type: object
@@ -9,3 +10,8 @@ props:
       enum:
         - right
         - left
+slots:
+  content:
+    title: Content
+  trigger:
+    title: Trigger

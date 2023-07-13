@@ -3,3 +3,6 @@ name: "Input - Checkbox"
 status: "stable"
 props:
   type: object
+  properties:
+    classes:
+      type: array

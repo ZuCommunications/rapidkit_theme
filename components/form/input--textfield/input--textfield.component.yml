@@ -3,3 +3,6 @@ name: "Input - Textfield"
 status: "stable"
 props:
   type: object
+  properties:
+    classes:
+      type: array
