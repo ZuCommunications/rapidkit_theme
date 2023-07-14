@@ -4,9 +4,8 @@ status: "experimental"
 props:
   type: object
   properties:
-    slideCount:
-      type: integer
-slots:
+    classes:
+      type: array
   slides:
     title: Slides
     examples:
