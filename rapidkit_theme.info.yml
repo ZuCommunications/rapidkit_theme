@@ -1,12 +1,11 @@
-name: rapidkit_theme
+name: RapidKit Theme
 type: theme
-"base theme": stable9
+description: "Starter kit for theme for RapidKit"
+core_version_requirement: ^10
+base theme: stable9
 starterkit: true
-version: VERSION
 libraries:
   - rapidkit_theme/app
-core_version_requirement: ^10
 generator: "rapidkit_theme:10.1.0-rc1"
 dependencies:
   - drupal:sdc
-  - drupal:cl_server
