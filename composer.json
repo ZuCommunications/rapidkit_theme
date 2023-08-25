@@ -5,8 +5,12 @@
   "license": "GPL-2.0-or-later",
   "authors": [
     {
-      "name": "Kevin Warrington",
-      "role": ""
+      "name": "zu",
+      "homepage": "https://zu.com/"
     }
-  ]
+  ],
+  "homepage": "https://github.com/ZuCommunications/rapidkit_theme",
+  "require": {
+    "drupal/cl_server": "^2.0@beta"
+  }
 }
