@@ -9,8 +9,5 @@
       "homepage": "https://zu.com/"
     }
   ],
-  "homepage": "https://github.com/ZuCommunications/rapidkit_theme",
-  "require": {
-    "drupal/cl_server": "^2.0@beta"
-  }
+  "homepage": "https://github.com/ZuCommunications/rapidkit_theme"
 }
