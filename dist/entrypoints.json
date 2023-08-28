@@ -2,10 +2,10 @@
   "entrypoints": {
     "app": {
       "css": [
-        "/themes/contrib/rapidkit_theme/dist/app.css"
+        "/rapidkit_theme/dist/app.css"
       ],
       "js": [
-        "/themes/contrib/rapidkit_theme/dist/app.js"
+        "/rapidkit_theme/dist/app.js"
       ]
     }
   }

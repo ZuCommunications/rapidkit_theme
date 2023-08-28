@@ -13,13 +13,14 @@
  */
 #}
 {%
-  set classes = [
+    set classes = [
     'region',
-    'region-' ~ region|clean_class
-  ]
+    'region-' ~ region|clean_class,
+    'container mx-auto'
+]
 %}
 {% if content %}
-  <div{{ attributes.addClass(classes) }}>
-    {{ content }}
-  </div>
+    <div{{ attributes.addClass(classes) }}>
+        {{ content }}
+    </div>
 {% endif %}
