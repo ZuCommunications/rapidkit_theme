@@ -12,10 +12,9 @@ dependencies:
   - cl_server:cl_server
 regions:
   header: Header
-  alert: Alert
   highlighted: Highlighted
   breadcrumb: Breadcrumb
-  help: Help
+  content_above: 'Content Above'
   sidebar_left: 'Left Sidebar'
   sidebar_right: 'Right Sidebar'
   content: Content
