@@ -10,3 +10,13 @@ generator: "rapidkit_theme:10.1.0-rc1"
 dependencies:
   - drupal:sdc
   - cl_server:cl_server
+regions:
+  header: Header
+  alert: Alert
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  help: Help
+  sidebar_left: 'Left Sidebar'
+  sidebar_right: 'Right Sidebar'
+  content: Content
+  footer: Footer
