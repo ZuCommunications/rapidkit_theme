@@ -9,6 +9,10 @@
  * - attributes: HTML attributes for the layout <div>.
  */
 #}
+{% set classes = [
+  'mb-4'
+] %}
+
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content') }}>
