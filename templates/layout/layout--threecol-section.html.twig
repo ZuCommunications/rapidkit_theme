@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Theme override for a three-column layout.
+ *
+ * Available variables:
+ * - in_preview: Whether the plugin is being rendered in preview mode.
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ */
+#}
+{% set grid_variants  = {
+    '33-34-33': 'md:grid-cols-3',
+    '25-50-25': 'md:grid-cols-[1fr_2fr_1fr]',
+    '25-25-50': 'md:grid-cols-[1fr_1fr_2fr]',
+    '50-25-25': 'md:grid-cols-[2fr_1fr_1fr]',
+} %}
+
+{% if content %}
+    <div class="mb-4 grid gap-4 {{ grid_variants[settings.column_widths] }}">
+        {% if content.first %}
+            <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first') }}>
+                {{ content.first }}
+            </div>
+        {% endif %}
+        {% if content.second %}
+            <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second') }}>
+                {{ content.second }}
+            </div>
+        {% endif %}
+        {% if content.third %}
+            <div {{ region_attributes.third.addClass('layout__region', 'layout__region--third') }}>
+                {{ content.third }}
+            </div>
+        {% endif %}
+
+    </div>
+{% endif %}
