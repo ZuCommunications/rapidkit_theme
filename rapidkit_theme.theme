@@ -20,8 +20,13 @@ function rapidkit_theme_preprocess_image_widget(array &$variables) {
   }
 }
 
+function rapidkit_theme_preprocess_layout(array &$variables) {
+    // Remove all template specific classes from layout templates
+    $variables['attributes']['class'] = 'layout';
+}
+
 function rapidkit_theme_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
-  if ($hook == 'form') {
+  if ($hook === 'form') {
     $suggestions[] = 'form__' . $variables['element']['#form_id'];
   }
 }
