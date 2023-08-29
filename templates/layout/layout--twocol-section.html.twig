@@ -10,15 +10,15 @@
  */
 #}
 {% set grid_variants  = {
-    '50-50': 'md:grid-cols-[50%_50%]',
-    '75-25': 'md:grid-cols-[75%_25%]',
-    '25-75': 'md:grid-cols-[25%_75%]',
-    '33-67': 'md:grid-cols-[33%_67%]',
-    '67-33': 'md:grid-cols-[67%_33%]',
+    '50-50': 'md:grid-cols-1',
+    '75-25': 'md:grid-cols-[2fr_1fr]',
+    '25-75': 'md:grid-cols-[1fr_2fr]',
+    '33-67': 'md:grid-cols-[1fr_3fr]',
+    '67-33': 'md:grid-cols-[3fr_1fr]',
 } %}
 
 {% if content %}
-    <div class="grid gap-4 {{ grid_variants[settings.column_widths] }}">
+    <div class="mb-4 grid gap-4 {{ grid_variants[settings.column_widths] }}">
         {% if content.first %}
             <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first') }}>
                 {{ content.first }}

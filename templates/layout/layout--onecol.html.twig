@@ -9,14 +9,8 @@
  * - attributes: HTML attributes for the layout <div>.
  */
 #}
-{%
-  set classes = [
-    'layout',
-    'layout--onecol'
-  ]
-%}
 {% if content %}
-  <div{{ attributes.addClass(classes) }}>
+  <div class="mb-4">
     <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content') }}>
       {{ content.content }}
     </div>
