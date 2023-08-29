@@ -19,3 +19,5 @@ regions:
   sidebar_right: 'Right Sidebar'
   content: Content
   footer: Footer
+ckeditor5-stylesheets:
+  - dist/app.css

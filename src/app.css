@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CKEDITOR */
+.ck-content {
+  @apply prose max-w-none;
+}
+
 [data-mode="dark"] .sb-main-padded {
   background-color: #2d2d2d;
 }
