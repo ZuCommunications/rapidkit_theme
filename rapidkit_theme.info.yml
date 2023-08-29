@@ -1,6 +1,7 @@
 name: RapidKit Theme
 type: theme
 description: "Starter kit for theme for RapidKit"
+logo: 'logo.png'
 core_version_requirement: ^10
 base theme: stable9
 starterkit: true
