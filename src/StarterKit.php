@@ -54,7 +54,7 @@ final class StarterKit implements StarterKitInterface {
       if(str_contains($file, '/contrib/')) {
           $file = str_replace('/contrib/', '/custom/', $file);
       }
-      file_put_contents($component_file, $component);
+      file_put_contents($component_file, $file);
     }
 
     // Remove files and directories
