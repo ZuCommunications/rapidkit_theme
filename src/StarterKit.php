@@ -29,14 +29,14 @@ final class StarterKit implements StarterKitInterface {
     file_put_contents($webpack_file, $webpack);
 
     // Process lando.yml file
-      if(array_key_exists('LANDO', $_ENV) && $_ENV['LANDO'] == 'ON') {
+    if(array_key_exists('LANDO', $_ENV) && $_ENV['LANDO'] == 'ON') {
         $lando_file = "/app/.lando.yml";
         $lando = file_get_contents($lando_file);
         $lando = str_replace($starterkit_machine_name, $machine_name, $lando);
         file_put_contents($lando_file, $lando);
-      } else {
+    } else {
         echo "Whao! You tried to generate a theme outside of lando! All good!\nJust make sure your custom commands in your .lando.yml file uses the new theme name!\n\n";
-      }
+    }
 
     // Process .storybook/preview.js file
     $storybook_file = "$working_dir/.storybook/preview.js";
@@ -66,7 +66,6 @@ final class StarterKit implements StarterKitInterface {
             file_put_contents($template_file, $file);
         }
     }
-
 
     // Remove files and directories
     array_map('unlink', array_filter((array) array_merge(glob("$working_dir/.github/*")))); // Remove all files in .github directory
