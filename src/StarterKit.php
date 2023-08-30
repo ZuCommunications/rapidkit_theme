@@ -29,10 +29,14 @@ final class StarterKit implements StarterKitInterface {
     file_put_contents($webpack_file, $webpack);
 
     // Process lando.yml file
-    $lando_file = "../$working_dir/.lando.yml";
-    $lando = file_get_contents($lando_file);
-    $lando = str_replace($starterkit_machine_name, $machine_name, $lando);
-    file_put_contents($lando_file, $lando);
+      if(array_key_exists('LANDO', $_ENV) && $_ENV['LANDO'] == 'ON') {
+        $lando_file = "/app/.lando.yml";
+        $lando = file_get_contents($lando_file);
+        $lando = str_replace($starterkit_machine_name, $machine_name, $lando);
+        file_put_contents($lando_file, $lando);
+      } else {
+        echo "Whao! You tried to generate a theme outside of lando! All good!\nJust make sure your custom commands in your .lando.yml file uses the new theme name!\n\n";
+      }
 
     // Process .storybook/preview.js file
     $storybook_file = "$working_dir/.storybook/preview.js";
