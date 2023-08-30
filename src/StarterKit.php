@@ -29,7 +29,7 @@ final class StarterKit implements StarterKitInterface {
     file_put_contents($webpack_file, $webpack);
 
     // Process lando.yml file
-    $lando_file = "$working_dir/.lando.yml";
+    $lando_file = "../$working_dir/.lando.yml";
     $lando = file_get_contents($lando_file);
     $lando = str_replace($starterkit_machine_name, $machine_name, $lando);
     file_put_contents($lando_file, $lando);
