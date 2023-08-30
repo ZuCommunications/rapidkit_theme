@@ -46,20 +46,16 @@ final class StarterKit implements StarterKitInterface {
     file_put_contents($storybook_file, $storybook);
 
     // Process component files
-    $component_files = glob("$working_dir/components/*/*");
-    foreach ($component_files as $component_file) {
-      $file = file_get_contents($component_file);
-      if(str_contains($file, $starterkit_machine_name)) {
-          $file = str_replace($starterkit_machine_name, $machine_name, $file);
+      $component_files = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator("$working_dir/components"));
+      foreach ($component_files as $component_file) {
+        if($component_file->isFile()) {
+            $file = file_get_contents($component_file->getPathname());
+            $file = str_replace($starterkit_machine_name, $machine_name, $file);
+            $file = str_replace($starterkit_theme_name, $theme_name, $file);
+            $file = str_replace('/contrib/', '/custom/', $file);
+            file_put_contents($component_file, $file);
+          }
       }
-      if(str_contains($file, $starterkit_theme_name)) {
-          $file = str_replace($starterkit_theme_name, $theme_name, $file);
-      }
-      if(str_contains($file, '/contrib/')) {
-          $file = str_replace('/contrib/', '/custom/', $file);
-      }
-      file_put_contents($component_file, $file);
-    }
 
     // Remove files and directories
     $github_files = glob("$working_dir/.github/*");
