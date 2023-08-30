@@ -38,7 +38,7 @@ const preview = {
   globals: {
     drupalTheme: "rapidkit_theme",
     supportedDrupalThemes: {
-      rapidkit_theme: { title: "zu Starterkit" },
+      rapidkit_theme: { title: "RapidKit Theme" },
     },
   },
 };
