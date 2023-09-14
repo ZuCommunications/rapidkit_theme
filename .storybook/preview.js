@@ -21,7 +21,7 @@ const preview = {
     },
     server: {
       // Replace this with your Drupal site URL, or an environment variable.
-      url: "https://rapidkit.lndo.site/",
+      url: "https://rapidkit.lndo.site/", // TODO: Replace with your Drupal site URL.
       // To customize the HTML returned by Drupal, uncomment the following:
       // import * as drupalPreview from "@lullabot/storybook-drupal-addon/preview";
       // fetchStoryHtml: async (url, path, params, context) => {
