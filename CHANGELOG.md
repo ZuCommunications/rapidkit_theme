@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.1.0...v1.3.0) (2023-09-16)
+
+
+### Features
+
+* release workflow updates theme version ([cd3d7e3](https://github.com/ZuCommunications/rapidkit_theme/commit/cd3d7e3a1c417e175ff32306f3c08c39114f970e))
+
+
+### Bug Fixes
+
+* sed subsitution ([7f350a0](https://github.com/ZuCommunications/rapidkit_theme/commit/7f350a0f0f4c26a762169c897ce1cf909fd99d59))
+* sed uses in-place edit ([18eb7fd](https://github.com/ZuCommunications/rapidkit_theme/commit/18eb7fd28bc4934e553987de454bf36b8fd5fc9b))
+* setting correct version number ([e57f7ec](https://github.com/ZuCommunications/rapidkit_theme/commit/e57f7ec0aa22593ebd22dffc86a9fee030068ed0))
+
 ## [1.2.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.1.0...v1.2.0) (2023-09-16)
 
 
