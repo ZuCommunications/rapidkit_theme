@@ -31,25 +31,27 @@ jobs:
       - id: step-1
         name: Create Release tag
         run: |
+          VERSION_ONE=$(git describe --tags $(git rev-list --tags --max-count=1))
           git config --global user.name 'zuGit'
           git config --global user.email 'github@zu.com'
           npx standard-version --dry-run | sed -n '/^---$/,/^---$/p' | grep -v '^---$' > ./NOTES.md
           npx standard-version
-          sed -i 's/^\(version: \).*$/\1'"${$(git describe --tags $(git rev-list --tags --max-count=1)):1}"'/' rapidkit_theme.info.yml
-          git commit --all --amend --no-edit --no-verify
-          git tag -f $(git describe --tags $(git rev-list --tags --max-count=1))
-          echo ::set-output name=tag::$(git describe --tags $(git rev-list --tags --max-count=1))
-          git push --atomic origin main $(git describe --tags $(git rev-list --tags --max-count=1))
+          VERSION_TWO=$(git describe --tags $(git rev-list --tags --max-count=1))
+          echo "VERSION_ONE: $VERSION_ONE"
+          echo "VERSION_TWO: $VERSION_TWO"
+          sed -i 's/^\(version: \).*$/\1'"${VERSION_TWO:1}"'/' rapidkit_theme.info.yml
+          git status
+          cat rapidkit_theme.info.yml
         shell: bash
         working-directory: ${{ github.workspace }}
 
-      - id: step-2
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.step-1.outputs.tag }}
-          release_name: ${{ steps.step-1.outputs.tag }}
-          body_path: ./NOTES.md
-          draft: false
-          prerelease: false
+#      - id: step-2
+#        uses: actions/create-release@v1
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        with:
+#          tag_name: ${{ steps.step-1.outputs.tag }}
+#          release_name: ${{ steps.step-1.outputs.tag }}
+#          body_path: ./NOTES.md
+#          draft: false
+#          prerelease: false
