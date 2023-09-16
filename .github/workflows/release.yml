@@ -29,16 +29,20 @@ jobs:
           node-version: 18
 
       - id: step-1
+        name: Create Release tag
         run: |
+          NEW_VERSION=$(git describe --tags $(git rev-list --tags --max-count=1))
           git config --global user.name 'zuGit'
           git config --global user.email 'github@zu.com'
           npx standard-version --dry-run | sed -n '/^---$/,/^---$/p' | grep -v '^---$' > ./NOTES.md
           npx standard-version
+          sed -i 's/^\(version: \).*$/\1'"${NEW_VERSION:1}"'/' rapidkit_theme.info.yml
           git commit --all --amend --no-edit --no-verify
           git tag -f $(git describe --tags $(git rev-list --tags --max-count=1))
-          echo ::set-output name=tag::$(git describe --tags $(git rev-list --tags --max-count=1))
-          git push --atomic origin main $(git describe --tags $(git rev-list --tags --max-count=1))
+          echo ::set-output name=tag::$NEW_VERSION
+          git push --atomic origin main $NEW_VERSION
         shell: bash
+        working-directory: ${{ github.workspace }}
 
       - id: step-2
         uses: actions/create-release@v1
