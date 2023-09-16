@@ -35,7 +35,7 @@ jobs:
           git config --global user.email 'github@zu.com'
           npx standard-version --dry-run | sed -n '/^---$/,/^---$/p' | grep -v '^---$' > ./NOTES.md
           npx standard-version
-          sed  's/^\(version: \).*$/\1'"${$(git describe --tags $(git rev-list --tags --max-count=1)):1}"'/' rapidkit_theme.info.yml
+          sed -i 's/^\(version: \).*$/\1'"${$(git describe --tags $(git rev-list --tags --max-count=1)):1}"'/' rapidkit_theme.info.yml
           git commit --all --amend --no-edit --no-verify
           git tag -f $(git describe --tags $(git rev-list --tags --max-count=1))
           echo ::set-output name=tag::$(git describe --tags $(git rev-list --tags --max-count=1))
