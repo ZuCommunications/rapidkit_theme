@@ -1,0 +1,52 @@
+name: Create New Release
+
+env:
+  # These env variables provide metadata about the workflow file.
+  WORKFLOW_VERSION: 1.0.0
+  WORKFLOW_DESCRIPTION: Package a new release with a Changelog.
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      # Checkout the repository
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          fetch-depth: 0
+
+      # Install Node
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - id: step-1
+        run: |
+          git config --global user.name 'zuGit'
+          git config --global user.email 'github@zu.com'
+          npx standard-version --dry-run | sed -n '/^---$/,/^---$/p' | grep -v '^---$' > ./NOTES.md
+          npx standard-version
+          git commit --all --amend --no-edit --no-verify
+          git tag -f $(git describe --tags $(git rev-list --tags --max-count=1))
+          echo ::set-output name=tag::$(git describe --tags $(git rev-list --tags --max-count=1))
+          git push --atomic origin main $(git describe --tags $(git rev-list --tags --max-count=1))
+        shell: bash
+
+      - id: step-2
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.step-1.outputs.tag }}
+          release_name: ${{ steps.step-1.outputs.tag }}
+          body_path: ./NOTES.md
+          draft: false
+          prerelease: false
