@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.1.0...v1.2.0) (2023-09-16)
+
+
+### Features
+
+* release workflow updates theme version ([cd3d7e3](https://github.com/ZuCommunications/rapidkit_theme/commit/cd3d7e3a1c417e175ff32306f3c08c39114f970e))
+
 ## 1.1.0 (2023-09-16)
 
 
