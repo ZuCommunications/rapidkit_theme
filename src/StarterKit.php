@@ -18,6 +18,7 @@ final class StarterKit implements StarterKitInterface {
     $info_file = "$working_dir/$machine_name.info.yml";
     $info = Yaml::decode(file_get_contents($info_file));
     unset($info['hidden'], $info['starterkit']);
+    $info['description'] = "A base Drupal theme, made with ❤️ by zu.";
     file_put_contents($info_file, Yaml::encode($info));
 
     // Process webpack.config.js file
