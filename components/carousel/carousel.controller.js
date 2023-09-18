@@ -9,7 +9,7 @@ import "./carousel.css";
 export default class extends Controller {
   static targets = ["prev", "next", "pagination"];
   connect() {
-    const swiper = new Swiper(".swiper", {
+    return new Swiper(".swiper", {
       loop: true,
       autoHeight: true,
       modules: [Navigation, Pagination],
