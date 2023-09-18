@@ -79,6 +79,8 @@ final class StarterKit implements StarterKitInterface {
     }
 
     // Remove files and directories
+    array_map('unlink', array_filter((array) array_merge(glob("$working_dir/.github/workflows/*")))); // Remove all files in .github/workflows directory
+    rmdir("$working_dir/.github/workflows"); // Remove .github/workflows directory
     array_map('unlink', array_filter((array) array_merge(glob("$working_dir/.github/*")))); // Remove all files in .github directory
     rmdir("$working_dir/.github"); // Remove .github directory
     array_map('unlink', array_filter((array) array_merge(glob("$working_dir/dist/*")))); // Remove all files in dist directory
