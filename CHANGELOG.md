@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.3.1...v1.3.2) (2023-09-18)
+
+
+### Bug Fixes
+
+* added description during postprocess ([01076d4](https://github.com/ZuCommunications/rapidkit_theme/commit/01076d44d69a3a884a7f523b3c26fb970a08ded5))
+* **carousel:** return swiper object ([c1c5eac](https://github.com/ZuCommunications/rapidkit_theme/commit/c1c5eac0a6b7fa624efb4867792506e90961ae9f))
+
 ### [1.3.1](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.3.0...v1.3.1) (2023-09-18)
 
 ## [1.3.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.1.0...v1.3.0) (2023-09-16)
