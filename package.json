@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "flowbite": "^1.8.1",
-    "swiper": "^10.3.1"
+    "swiper": "^11.0.3"
   },
   "devDependencies": {
     "@hotwired/stimulus": "^3.2.2",
