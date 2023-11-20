@@ -47,7 +47,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.5.3",
     "tailwindcss": "^3.3.5",
-    "ts-loader": "^9.5.0"
+    "ts-loader": "^9.5.1"
   },
   "engineStrict": true,
   "engines": {
