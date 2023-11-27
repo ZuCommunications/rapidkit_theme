@@ -16,13 +16,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "flowbite": "^2.1.1",
-    "swiper": "^11.0.4"
+    "flowbite": "^2.2.0",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/stimulus-webpack-helpers": "^1.0.1",
-    "@lullabot/storybook-drupal-addon": "^2.0.2",
+    "@lullabot/storybook-drupal-addon": "^2.0.6",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
     "@storybook/addon-styling": "^1.3.7",
