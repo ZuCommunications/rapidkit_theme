@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.0...v1.5.1) (2024-08-26)
+
+
+### Bug Fixes
+
+* allow starterkit yml to ignore files ([5e67af7](https://github.com/ZuCommunications/rapidkit_theme/commit/5e67af7567157ce4ce18fd8480b32f1e0ec67ff0))
+
 ## [1.5.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.4.1...v1.5.0) (2024-08-26)
 
 
