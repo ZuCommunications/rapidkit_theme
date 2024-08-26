@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.4.1...v1.5.0) (2024-08-26)
+
+
+### Features
+
+* upgrade theme for drupal 10.3 ([4fb337c](https://github.com/ZuCommunications/rapidkit_theme/commit/4fb337c16e418ee4a5790bf8a7e2a75143b1aa43))
+
 ### [1.4.1](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.4.0...v1.4.1) (2024-08-26)
 
 ## [1.4.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.3.2...v1.4.0) (2023-11-09)
