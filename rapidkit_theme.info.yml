@@ -3,9 +3,8 @@ type: theme
 description: "Starter kit for theme for RapidKit"
 version: 1.4.1
 logo: 'logo.png'
-core_version_requirement: ^10
+core_version_requirement: ^10.3
 base theme: stable9
-starterkit: true
 libraries:
   - rapidkit_theme/app
 generator: "rapidkit_theme:10.1.0-rc1"

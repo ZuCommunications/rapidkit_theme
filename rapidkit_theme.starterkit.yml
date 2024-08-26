@@ -1,0 +1,7 @@
+ignore:
+  - '.github'
+  - 'dist'
+  - '/src/StarterKit.php'
+  - '/rapidkit_theme.starterkit.yml'
+no_edit: []
+no_rename: []
