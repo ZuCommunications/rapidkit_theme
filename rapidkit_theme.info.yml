@@ -8,8 +8,6 @@ base theme: stable9
 libraries:
   - rapidkit_theme/app
 generator: "rapidkit_theme:10.1.0-rc1"
-dependencies:
-  - cl_server:cl_server
 regions:
   header: Header
   highlighted: Highlighted
