@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.1...v1.5.2) (2024-08-26)
+
+
+### Bug Fixes
+
+* removed sdc depedency. fix .github dir not being removed on theme generate ([886324c](https://github.com/ZuCommunications/rapidkit_theme/commit/886324cedfa5c3dab78c79b72a8c492998bebc3b))
+
 ### [1.5.1](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.0...v1.5.1) (2024-08-26)
 
 
