@@ -78,15 +78,5 @@ final class StarterKit implements StarterKitInterface {
             file_put_contents($template_file, $file);
         }
     }
-
-    // Remove files and directories
-    array_map('unlink', array_filter((array) array_merge(glob("$working_dir/.github/workflows/*")))); // Remove all files in .github/workflows directory
-    rmdir("$working_dir/.github/workflows"); // Remove .github/workflows directory
-    array_map('unlink', array_filter((array) array_merge(glob("$working_dir/.github/*")))); // Remove all files in .github directory
-    rmdir("$working_dir/.github"); // Remove .github directory
-    array_map('unlink', array_filter((array) array_merge(glob("$working_dir/dist/*")))); // Remove all files in dist directory
-    rmdir("$working_dir/dist"); // Remove .github directory
-    unlink("$working_dir/composer.json"); // Remove composer.json
-    unlink("$working_dir/src/StarterKit.php"); // Remove StarterKit.php
   }
 }
