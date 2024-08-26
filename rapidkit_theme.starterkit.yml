@@ -1,9 +1,11 @@
 ignore:
-  - '.github'
-  - 'dist'
+  - '.github/*'
+  - 'dist/*'
   - 'composer.json'
   - 'package-lock.json'
   - '/src/StarterKit.php'
   - '/rapidkit_theme.starterkit.yml'
 no_edit: []
 no_rename: []
+info:
+  version: 1.0.0

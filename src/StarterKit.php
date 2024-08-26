@@ -17,7 +17,6 @@ final class StarterKit implements StarterKitInterface {
     // Process info.yml file.
     $info_file = "$working_dir/$machine_name.info.yml";
     $info = Yaml::decode(file_get_contents($info_file));
-    unset($info['hidden'], $info['starterkit']);
     $info['description'] = "A base Drupal theme, made with ❤️ by zu.";
     file_put_contents($info_file, Yaml::encode($info));
 
@@ -78,5 +77,11 @@ final class StarterKit implements StarterKitInterface {
             file_put_contents($template_file, $file);
         }
     }
+
+    // Remove files and directories
+    array_map('unlink', array_filter((array) array_merge(glob("$working_dir/.github/workflows/*")))); // Remove all files in .github/workflows directory
+    rmdir("$working_dir/.github/workflows"); // Remove .github/workflows directory
+    array_map('unlink', array_filter((array) array_merge(glob("$working_dir/.github/*")))); // Remove all files in .github directory
+    rmdir("$working_dir/.github"); // Remove .github directory
   }
 }

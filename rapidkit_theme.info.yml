@@ -9,7 +9,6 @@ libraries:
   - rapidkit_theme/app
 generator: "rapidkit_theme:10.1.0-rc1"
 dependencies:
-  - drupal:sdc
   - cl_server:cl_server
 regions:
   header: Header
