@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.4...v1.5.5) (2024-08-26)
+
+
+### Bug Fixes
+
+* removed dependency ([cf5de05](https://github.com/ZuCommunications/rapidkit_theme/commit/cf5de05e5c865534a844b2d25e5dddb5053463d1))
+
 ### [1.5.4](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.3...v1.5.4) (2024-08-26)
 
 
