@@ -38,6 +38,16 @@ final class StarterKit implements StarterKitInterface {
         echo "Whao! You tried to generate a theme outside of lando! All good!\nJust make sure your custom commands in your .lando.yml file uses the new theme name!\n\n";
     }
 
+    // Process package.json file
+    $package_json_file = "/app/package.json";
+    $package_json = file_get_contents($package_json_file);
+    $package_json = str_replace(
+        [$starterkit_machine_name, '/contrib/'],
+        [$machine_name, '/custom/'],
+        $package_json
+    );
+    file_put_contents($package_json_file, $package_json);
+
     // Process .storybook/preview.js file
     $storybook_file = "$working_dir/.storybook/preview.js";
     $storybook = file_get_contents($storybook_file);
