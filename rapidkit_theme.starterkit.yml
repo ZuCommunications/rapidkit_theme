@@ -8,4 +8,5 @@ ignore:
 no_edit: []
 no_rename: []
 info:
+  description: A base Drupal theme, made with ❤️ by zu.
   version: 1.0.0

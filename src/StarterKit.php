@@ -14,12 +14,6 @@ final class StarterKit implements StarterKitInterface {
     $starterkit_machine_name = 'rapidkit_theme';
     $starterkit_theme_name = 'RapidKit';
 
-    // Process info.yml file.
-    $info_file = "$working_dir/$machine_name.info.yml";
-    $info = Yaml::decode(file_get_contents($info_file));
-    $info['description'] = "A base Drupal theme, made with ❤️ by zu.";
-    file_put_contents($info_file, Yaml::encode($info));
-
     // Process webpack.config.js file
     $webpack_file = "$working_dir/webpack.config.js";
     $webpack = file_get_contents($webpack_file);
@@ -53,30 +47,6 @@ final class StarterKit implements StarterKitInterface {
         $storybook
     );
     file_put_contents($storybook_file, $storybook);
-
-    // Process component files
-    $component_files = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator("$working_dir/components"));
-    foreach ($component_files as $component_file) {
-        if($component_file->isFile()) {
-            $file = file_get_contents($component_file->getPathname());
-            $file = str_replace(
-                [$starterkit_machine_name, $starterkit_theme_name, '/contrib/'],
-                [$machine_name, $theme_name, '/custom/'],
-                $file
-            );
-            file_put_contents($component_file, $file);
-        }
-    }
-
-    // Process template files
-    $template_files = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator("$working_dir/templates"));
-    foreach ($template_files as $template_file) {
-        if($template_file->isFile()) {
-            $file = file_get_contents($template_file->getPathname());
-            $file = str_replace($starterkit_machine_name, $machine_name, $file);
-            file_put_contents($template_file, $file);
-        }
-    }
 
     // Remove files and directories
     array_map('unlink', array_filter((array) array_merge(glob("$working_dir/.github/workflows/*")))); // Remove all files in .github/workflows directory
