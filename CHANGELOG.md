@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.4](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.3...v1.5.4) (2024-08-26)
+
+
+### Bug Fixes
+
+* preprocess package.json ([85c1b3c](https://github.com/ZuCommunications/rapidkit_theme/commit/85c1b3c463e9cd7611a1893b6b7b3ff7ecd7279b))
+
 ### [1.5.3](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.2...v1.5.3) (2024-08-26)
 
 
