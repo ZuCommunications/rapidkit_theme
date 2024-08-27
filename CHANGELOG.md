@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.7...v1.6.0) (2024-08-27)
+
+
+### Features
+
+* removed drupal storybook npm package ([a6d2de8](https://github.com/ZuCommunications/rapidkit_theme/commit/a6d2de8693eb1d3f46d4eca0923af3ccbaf5ffed))
+
 ### [1.5.7](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.6...v1.5.7) (2024-08-27)
 
 
