@@ -1,14 +1,1 @@
-{
-  "title": "Carousel",
-  "parameters": {
-    "fileName": "/app/web/themes/contrib/rapidkit_theme/components/carousel/carousel.stories.json"
-  },
-  "stories": [
-    {
-      "name": "default",
-      "args": {
-        "slides": "<div class=\"swiper-slide\" data-carousel-target=\"item\">\n      <div style=\"height:400px\">\n        <img src=\"https://picsum.photos/800/800\" class=\"h-full w-full object-cover\" alt=\"...\">\n      </div>\n    </div>\n    <div class=\"swiper-slide\" data-carousel-target=\"item\">\n      <div style=\"height:500px\">\n        <img src=\"https://picsum.photos/800/800\" class=\"h-full w-full object-cover\" alt=\"...\">\n      </div>\n    </div>\n    <div class=\"swiper-slide\" data-carousel-target=\"item\">\n      <div style=\"height:350px\">\n        <img src=\"https://picsum.photos/800/800\" class=\"h-full w-full object-cover\" alt=\"...\">\n      </div>\n    </div>"
-      }
-    }
-  ]
-}
+{"title":"Carousel","parameters":{"server":{"url":"https:\/\/rapidkit.lndo.site\/storybook\/stories\/render"}},"stories":[{"name":"Carousel","args":{"messages":["Hello World"],"type":"status"},"parameters":{"server":{"id":"eyJwYXRoIjoidGhlbWVzXC9jb250cmliXC9yYXBpZGtpdF90aGVtZVwvY29tcG9uZW50c1wvY2Fyb3VzZWxcL2Nhcm91c2VsLnN0b3JpZXMudHdpZyIsImlkIjoiZGVmYXVsdCJ9"}}}]}

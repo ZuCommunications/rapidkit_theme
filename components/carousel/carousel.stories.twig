@@ -1,0 +1,23 @@
+{% stories carousel with { title: 'Carousel' } %}
+    {% story default with { name: 'Carousel' } %}
+        {% embed 'rapidkit_theme:carousel' %}
+            {% block slides %}
+                <div class="swiper-slide" data-carousel-target="item">
+                    <div style="height:400px">
+                        <img src="https://picsum.photos/800/800" class="h-full w-full object-cover" alt="...">
+                    </div>
+                </div>
+                <div class="swiper-slide" data-carousel-target="item">
+                    <div style="height:500px">
+                        <img src="https://picsum.photos/800/800" class="h-full w-full object-cover" alt="...">
+                    </div>
+                </div>
+                <div class="swiper-slide" data-carousel-target="item">
+                    <div style="height:350px">
+                        <img src="https://picsum.photos/800/800" class="h-full w-full object-cover" alt="...">
+                    </div>
+                </div>
+            {% endblock %}
+        {% endembed %}
+    {% endstory %}
+{% endstories %}

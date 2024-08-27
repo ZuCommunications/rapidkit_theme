@@ -1,0 +1,19 @@
+{% stories alert with { title: 'Alert' } %}
+
+    {% story default with {
+        name: 'Alert',
+        args: {
+            messages: ['Hello World'],
+            type: 'status'
+        }
+    } %}
+
+        {% embed 'rapidkit_theme:alert' with {
+            messages: messages,
+            type: type,
+        } %}
+        {% endembed %}
+
+    {% endstory %}
+
+{% endstories %}

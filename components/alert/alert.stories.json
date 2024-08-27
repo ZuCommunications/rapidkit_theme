@@ -1,15 +1,1 @@
-{
-  "title": "Alert",
-  "parameters": {
-    "fileName": "/app/web/themes/contrib/rapidkit_theme/components/alert/alert.stories.json"
-  },
-  "stories": [
-    {
-      "name": "status",
-      "args": {
-        "type": "status",
-        "messages": ["This is a status message"]
-      }
-    }
-  ]
-}
+{"title":"Alert","parameters":{"server":{"url":"https:\/\/rapidkit.lndo.site\/storybook\/stories\/render"}},"stories":[{"name":"Alert","args":{"messages":["Hello World"],"type":"status"},"parameters":{"server":{"id":"eyJwYXRoIjoidGhlbWVzXC9jb250cmliXC9yYXBpZGtpdF90aGVtZVwvY29tcG9uZW50c1wvYWxlcnRcL2FsZXJ0LnN0b3JpZXMudHdpZyIsImlkIjoiZGVmYXVsdCJ9"}}}]}

@@ -8,7 +8,7 @@
     "dev": "encore dev",
     "watch": "encore dev --watch",
     "build": "encore production",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
     "lint": "eslint --fix .",
     "format": "prettier --write ."
