@@ -1,15 +1,18 @@
 /** @type { import('@storybook/server-webpack5').StorybookConfig } */
 const config = {
-  stories: ["../web/**/*.mdx", "../components/**/*.stories.@(json)"],
+  stories: ["../components/**/*.mdx", "../components/**/*.stories.@(json)"],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-styling",
-    "@lullabot/storybook-drupal-addon",
+    "@storybook/addon-styling"
   ],
   framework: {
     name: "@storybook/server-webpack5",
-    options: {},
+    options: {
+      builder: {
+        useSWC: true
+      }
+    },
   },
   docs: {
     autodocs: "tag",
