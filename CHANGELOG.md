@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.6.0...v1.6.1) (2024-08-27)
+
+
+### Bug Fixes
+
+* removed depricated storybook addon package ([22d6b78](https://github.com/ZuCommunications/rapidkit_theme/commit/22d6b78322a083e653a192152cf71abe8ccddcb5))
+
 ## [1.6.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.7...v1.6.0) (2024-08-27)
 
 
