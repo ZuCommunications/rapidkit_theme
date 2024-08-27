@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.7](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.6...v1.5.7) (2024-08-27)
+
+
+### Bug Fixes
+
+* added depedency to storybook module ([e410022](https://github.com/ZuCommunications/rapidkit_theme/commit/e4100226ddcca17ad0f8f3e954db3c1695be3d38))
+
 ### [1.5.6](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.5...v1.5.6) (2024-08-27)
 
 
