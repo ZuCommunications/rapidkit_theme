@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.6.1...v1.6.2) (2024-08-27)
+
+
+### Bug Fixes
+
+* added stories in twig and json ([7ae992c](https://github.com/ZuCommunications/rapidkit_theme/commit/7ae992cba98e6d587b65b4a2b8d8b3f9e0e71959))
+
 ### [1.6.1](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.6.0...v1.6.1) (2024-08-27)
 
 
