@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.6](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.5...v1.5.6) (2024-08-27)
+
+
+### Bug Fixes
+
+* removed lock and dist directory. updated main.js of storybook for the storybook modhle ([bbaaca0](https://github.com/ZuCommunications/rapidkit_theme/commit/bbaaca0680423e980d231774bffed53432dee21a))
+
 ### [1.5.5](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.5.4...v1.5.5) (2024-08-26)
 
 
