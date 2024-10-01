@@ -17,16 +17,16 @@
  */
 #}
 {% if attributes -%}
-  <div{{ attributes }}>
+  <div {{ attributes }}>
 {% endif %}
   {% if title %}
     <h3>{{ title }}</h3>
   {% endif %}
-
+{#Prettier Ignore#}
   <{{ list.type }}{{ list.attributes }}>
 
     {% for row in rows %}
-      <li{{ row.attributes }}>
+      <li {{ row.attributes }}>
         {{- row.content -}}
       </li>
     {% endfor %}

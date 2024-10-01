@@ -23,7 +23,7 @@
  */
 #}
 {% if link_path -%}
-  <a{{ attributes.addClass('username') }}>{{ name }}{{ extra }}</a>
+  <a {{ attributes.addClass('username') }}>{{ name }}{{ extra }}</a>
 {%- else -%}
-  <span{{ attributes }}>{{ name }}{{ extra }}</span>
+  <span {{ attributes }}>{{ name }}{{ extra }}</span>
 {%- endif -%}

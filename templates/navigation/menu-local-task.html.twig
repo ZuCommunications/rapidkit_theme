@@ -19,4 +19,4 @@
 {% else %}
   {% set link = link|merge({'#attributes':{'class':'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'}}) %}
 {% endif %}
-<li{{ attributes.addClass(is_active ? 'mr-2 is-active' : 'mr-2') }}>{{ link }}</li>
+<li {{ attributes.addClass(is_active ? 'mr-2 is-active' : 'mr-2') }}>{{ link }}</li>
