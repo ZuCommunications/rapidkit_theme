@@ -31,16 +31,25 @@ function rapidkit_theme_preprocess_layout(array &$variables): void
 
 function rapidkit_theme_theme_suggestions_alter(array &$suggestions, array $variables, string $hook): void
 {
-    // Add suggestion target for specific form.
-    if ($hook === 'form') {
-        $suggestions[] = 'form__' . $variables['element']['#form_id'];
-    }
-
-    // Add suggestion target for menu based on region.
-    if ($hook === 'menu' && isset($variables['attributes']['data-block']['region'])) {
-        $region = $variables['attributes']['data-block']['region'];
-        $suggestions[] = $variables['theme_hook_original'] . '__' . $region;
-        $suggestions[] = 'menu__' . $region;
+    switch ($hook) {
+        case 'form':
+            // Add suggestion target for specific form.
+            $suggestions[] = 'form__' . $variables['element']['#form_id'];
+            break;
+        case 'menu':
+            // Add suggestion target for menu based on region.
+            if (isset($variables['attributes']['data-block']['region'])) {
+                $region = $variables['attributes']['data-block']['region'];
+                $suggestions[] = $variables['theme_hook_original'] . '__' . $region;
+                $suggestions[] = 'menu__' . $region;
+            }
+            break;
+        case "views_view":
+        case "views_view_unformatted":
+        case "views_view_field":
+        case "views_view_fields":
+            $suggestions[] = $hook . "__" . $variables["view"]->id();
+            break;
     }
 }
 
