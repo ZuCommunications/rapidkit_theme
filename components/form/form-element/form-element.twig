@@ -68,7 +68,7 @@
 {% set children_html %}{% block children_html %}{{ children }}{% endblock %}{% endset %}
 {% set label_html %}{% block label_html %}{{ label }}{% endblock %}{% endset %}
 
-<div{{ attributes.addClass(classes) }}>
+<div {{ attributes.addClass(classes) }}>
     {% if type in ['checkbox', 'radio'] %}
         <div class="flex items-start mb-1">
             {{ children_html }}
@@ -100,7 +100,7 @@
         </p>
     {% endif %}
     {% if description_display in ['after', 'invisible'] and description.content %}
-        <div{{ description.attributes|default(create_attribute()).addClass(description_classes) }}>
+        <div {{ description.attributes|default(create_attribute()).addClass(description_classes) }}>
             {{ description.content }}
         </div>
     {% endif %}

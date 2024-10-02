@@ -39,20 +39,20 @@
  * @see template_preprocess_table()
  */
 #}
-<table{{ attributes }}>
+<table {{ attributes }}>
   {% if caption %}
     <caption>{{ caption }}</caption>
   {% endif %}
 
   {% for colgroup in colgroups %}
     {% if colgroup.cols %}
-      <colgroup{{ colgroup.attributes }}>
+      <colgroup {{ colgroup.attributes }}>
         {% for col in colgroup.cols %}
           <col{{ col.attributes }} />
         {% endfor %}
       </colgroup>
     {% else %}
-      <colgroup{{ colgroup.attributes }} />
+      <colgroup {{ colgroup.attributes }} />
     {% endif %}
   {% endfor %}
 

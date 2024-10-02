@@ -26,10 +26,10 @@
       'form-item'
     ]
   %}
-  <div{{ attributes.addClass(classes) }}>
+  <div {{ attributes.addClass(classes) }}>
     {{ table }}
     {% if description.content %}
-      <div{{ description.attributes.addClass('description') }} >{{ description.content }}</div>
+      <div {{ description.attributes.addClass('description') }} >{{ description.content }}</div>
     {% endif %}
     {% if button %}
       <div class="clearfix">{{ button }}</div>

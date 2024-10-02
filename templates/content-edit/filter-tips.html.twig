@@ -33,7 +33,7 @@
           'filter-' ~ name|clean_class,
         ]
       %}
-      <div{{ tip.attributes.addClass(tip_classes) }}>
+      <div {{ tip.attributes.addClass(tip_classes) }}>
       <h3>{{ tip.name }}</h3>
     {% endif %}
 
@@ -45,7 +45,7 @@
             long ? 'filter-' ~ item.id|replace({'/': '-'}),
           ]
         %}
-        <li{{ item.attributes.addClass(item_classes) }}>{{ item.tip }}</li>
+        <li {{ item.attributes.addClass(item_classes) }}>{{ item.tip }}</li>
       {% endfor %}
       </ul>
     {% endif %}
