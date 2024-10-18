@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.6.2...v1.7.0) (2024-10-18)
+
+
+### Features
+
+* added view theme suggestions ([2c576a8](https://github.com/ZuCommunications/rapidkit_theme/commit/2c576a8ae6869a1409686a8b61ef6a4960117641))
+
+
+### Bug Fixes
+
+* fixed preprocess function name ([c306757](https://github.com/ZuCommunications/rapidkit_theme/commit/c306757911b788ef30d7ad083f586c273d1e70d7))
+* ignore ds_store ([e949881](https://github.com/ZuCommunications/rapidkit_theme/commit/e949881a43e0f800e6ad80c59603f07316527e40))
+* minor bug fixes ([a87f877](https://github.com/ZuCommunications/rapidkit_theme/commit/a87f8771df772f85cb5541c64026568f759d1623))
+
 ### [1.6.2](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.6.1...v1.6.2) (2024-08-27)
 
 
