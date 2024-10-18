@@ -22,15 +22,6 @@ The `dev-` prefix is a composer convention. In the above example, the actual bra
 
 After install, you will find the theme in `web/themes/contrib/rapidkit_theme`.
 
-### Dependencies
-
-This theme requires the following dependencies:
-
-```bash
-composer require 'drupal/cl_server:^2.0@beta'
-drush en -y cl_server sdc
-```
-
 ### Enable
 
 To enable the theme, you can run the following commands from the root of your project:
