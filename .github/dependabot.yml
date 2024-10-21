@@ -13,3 +13,8 @@ updates:
       npm-project:
         patterns:
           - "*"
+        exclude-patterns:
+          - "eslint-plugin-cypress"
+      eslint-plugin-cypress:
+        patterns:
+          - "eslint-plugin-cypress"
