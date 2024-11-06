@@ -14,7 +14,7 @@ updates:
         patterns:
           - "*"
         exclude-patterns:
-          - "eslint-plugin-cypress"
-      eslint-plugin-cypress:
+          - "eslint*"
+      eslint:
         patterns:
-          - "eslint-plugin-cypress"
+          - "eslint*"
