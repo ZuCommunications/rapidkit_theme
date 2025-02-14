@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.7.0...v1.7.1) (2025-02-14)
+
 ## [1.7.0](https://github.com/ZuCommunications/rapidkit_theme/compare/v1.6.2...v1.7.0) (2024-10-18)
 
 
